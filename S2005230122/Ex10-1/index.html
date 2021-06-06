@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h2{
+    color: #4c4c4c;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+span{
+    color: red;
+}
+
+.tab{
+    width: 814px;
+    margin: 0 auto;    
+}
+
+.border{
+    height: 3px;
+    width: 734px;
+    margin: auto;
+    background-color: #53a4f4;
+}
+</style>
+<body>
+    <div class="tab">
+        <img src="images/table.png" alt="">
+        <h2>学生延迟返校申请单</h2>
+        <div class="border"></div>
+        <form action="">
+            学生姓名 <span>*</span><br>
+            <input type="text" required><br>
+            性别 <span>*</span><br>
+            <label><input type="radio" checked="checked" id="man" name="sex">男</label><br>
+            <label><input type="radio" id="woman" name="sex">女</label><br>
+            学号 <span>*</span><br>
+            <input type="text" required><br>
+            班级 <span>*</span><br>
+            <input type="text" required><br>
+            联系方式 <span>*</span><br>
+            <input type="tel" required><br>
+            家长联系方式 <span>*</span><br>
+            <input type="tel" required><br>
+            现居地址<span>*</span><br>
+            <select name="cars" required>
+                <option value="选择" selected>请选择省份</option>
+                <option value="volvo">北京</option>
+                <option value="saab">天津</option>
+                <option value="fiat">河南</option>
+                <option value="audi">福建</option>
+                <option value="">湖北</option>
+            </select>
+            <select name="" id="" required>
+                <option value="" selected>请选择城市</option>
+                <option value="volvo">北京</option>
+                <option value="saab">天津</option>
+                <option value="fiat">河南</option>
+                <option value="audi">福建</option>
+                <option value="">湖北</option>
+            </select>
+            <select name="" id="" required>
+                <option value="" selected>请选择区/县</option>
+                <option value="volvo">北京</option>
+                <option value="saab">天津</option>
+                <option value="fiat">河南</option>
+                <option value="audi">福建</option>
+                <option value="">湖北</option>
+            </select><br>
+            <textarea name="" id="" cols="30" rows="5" required placeholder="详细地址" style="resize: none;"></textarea><br>
+            延迟返校事由 <span>*</span><br>
+            <label><input type="radio" name="aaa">确诊感染新型肺炎，正处于治疗期<br></label>
+            <label><input type="radio" name="aaa">疑似感染新型肺炎，正处于观察期<br></label>
+            <label><input type="radio" name="aaa">新型肺炎患者密切接触者，正处于居家隔离期<br></label>
+            <label><input type="radio" name="aaa">其他<input type="text"><br></label>
+            计划返校日期 <span>*</span><br>
+            <input type="date" required><br>
+            证明材料上传（选填）<br>
+            <input type="text"><br>
+            <input type="submit" value="提交"></button>
+        </form>
+    </div>
+</body>
+</html>
